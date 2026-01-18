@@ -2,8 +2,15 @@
   "name": "play_link",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "next dev",
+    "dev:customer": "pnpm --filter playlink-customer dev",
+    "dev:admin": "pnpm --filter playlink-admin dev",
+    "install:all": "pnpm install",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PlayLink Frontend
 
-## Getting Started
+**The Global Indoor and Outdoor Sports Booking Platform**
 
-First, run the development server:
+This is a pnpm monorepo containing the customer and admin frontends for PlayLink — a platform for discovering and booking sports courts in Sri Lanka (and eventually worldwide).
+
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install pnpm if needed
+npm install -g pnpm
+
+# Install dependencies
+pnpm install
+
+# Run customer app (http://localhost:3000)
+pnpm dev:customer
+
+# Run admin app (http://localhost:3001)
+pnpm dev:admin
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+See [README_MONOREPO.md](README_MONOREPO.md) for detailed documentation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Vision
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+PlayLink solves the manual booking problems facing Sri Lankan sports venues:
+- Real-time availability checking
+- Online payments and digital receipts
+- Unified platform for all indoor/outdoor courts
+- Venue owner dashboards
+- Admin management tools
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript 5
+- **Package Manager**: pnpm workspaces
+- **Styling**: Tailwind CSS 4 (ready to configure)
+- **React**: Version 19
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Workspace Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `apps/customer` — Customer booking interface
+- `apps/admin` — Venue & platform management
+- `packages/ui` — Shared component library
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ for the PlayLink MVP (Nov-Dec roadmap)
