@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Button } from '@playlink/ui'
 
@@ -16,4 +18,4 @@ const VenuesPage = () => {
     )
 }
 
-export { VenuesPage }
+export default VenuesPage

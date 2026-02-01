@@ -4,7 +4,12 @@
         "jsx": "preserve",
         "baseUrl": ".",
         "paths": {
-            "@playlink/ui": ["../../packages/ui/src/index.ts"]
+            "@playlink/ui": [
+                "../../packages/ui/src/index.ts"
+            ],
+            "@common/*": [
+                "../../common/*"
+            ]
         }
     }
 }
